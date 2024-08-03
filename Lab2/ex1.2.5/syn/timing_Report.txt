@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : P4_ADDER
+Version: F-2011.09-SP3
+Date   : Fri Apr  1 16:57:00 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[3] (input port)
+  Endpoint: S[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[3] (in)                                               0.00       0.00 f
+  UCARRY/A[3] (CARRY_GENERATOR_NBIT32_NBIT_PER_BLOCK4)
+                                                          0.00       0.00 f
+  UCARRY/R0_0_3/f_a (f_add_29)                            0.00       0.00 f
+  UCARRY/R0_0_3/U1/Z (XOR2_X1)                            0.08       0.08 f
+  UCARRY/R0_0_3/P (f_add_29)                              0.00       0.08 f
+  UCARRY/PG_B1_1_4/P1 (pg_0)                              0.00       0.08 f
+  UCARRY/PG_B1_1_4/U3/ZN (AOI21_X1)                       0.05       0.13 r
+  UCARRY/PG_B1_1_4/U2/ZN (INV_X1)                         0.02       0.15 f
+  UCARRY/PG_B1_1_4/G_out (pg_0)                           0.00       0.15 f
+  UCARRY/G_B_2_4/Ga (g_8)                                 0.00       0.15 f
+  UCARRY/G_B_2_4/U2/ZN (AOI21_X1)                         0.05       0.20 r
+  UCARRY/G_B_2_4/U1/ZN (INV_X1)                           0.04       0.24 f
+  UCARRY/G_B_2_4/G_out (g_8)                              0.00       0.24 f
+  UCARRY/G_B_3_8/Gb (g_7)                                 0.00       0.24 f
+  UCARRY/G_B_3_8/U2/ZN (AOI21_X1)                         0.05       0.29 r
+  UCARRY/G_B_3_8/U1/ZN (INV_X1)                           0.04       0.34 f
+  UCARRY/G_B_3_8/G_out (g_7)                              0.00       0.34 f
+  UCARRY/G_B_4_16/Gb (g_5)                                0.00       0.34 f
+  UCARRY/G_B_4_16/U2/ZN (AOI21_X1)                        0.05       0.39 r
+  UCARRY/G_B_4_16/U1/ZN (INV_X1)                          0.05       0.44 f
+  UCARRY/G_B_4_16/G_out (g_5)                             0.00       0.44 f
+  UCARRY/G_B_5_28/Gb (g_2)                                0.00       0.44 f
+  UCARRY/G_B_5_28/U2/ZN (AOI21_X1)                        0.06       0.50 r
+  UCARRY/G_B_5_28/U1/ZN (INV_X1)                          0.04       0.53 f
+  UCARRY/G_B_5_28/G_out (g_2)                             0.00       0.53 f
+  UCARRY/Co[7] (CARRY_GENERATOR_NBIT32_NBIT_PER_BLOCK4)
+                                                          0.00       0.53 f
+  USUM/Ci[7] (SUM_GENERATOR_NBIT_PER_BLOCK4_NBLOCKS8)     0.00       0.53 f
+  USUM/cbl_8/Ci_c (csb_ANBIT4_1)                          0.00       0.53 f
+  USUM/cbl_8/Mu/SEL (mux_1)                               0.00       0.53 f
+  USUM/cbl_8/Mu/U1/Z (MUX2_X1)                            0.07       0.60 r
+  USUM/cbl_8/Mu/Y[3] (mux_1)                              0.00       0.60 r
+  USUM/cbl_8/So_c[3] (csb_ANBIT4_1)                       0.00       0.60 r
+  USUM/S[31] (SUM_GENERATOR_NBIT_PER_BLOCK4_NBLOCKS8)     0.00       0.60 r
+  S[31] (out)                                             0.00       0.60 r
+  data arrival time                                                  0.60
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+

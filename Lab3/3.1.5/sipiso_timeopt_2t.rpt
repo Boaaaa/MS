@@ -1,0 +1,55 @@
+Warning: Design 'SIPISOALU' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SIPISOALU
+Version: F-2011.09-SP3
+Date   : Sat Apr 23 14:18:45 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: PIPO_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: PISO_reg[3]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SIPISOALU          5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  PIPO_reg[0]/CK (DFFR_X1)                 0.00       0.00 r
+  PIPO_reg[0]/Q (DFFR_X1)                  0.10       0.10 r
+  U21/ZN (NAND2_X1)                        0.04       0.14 f
+  U15/ZN (OAI22_X1)                        0.06       0.21 r
+  U14/ZN (INV_X1)                          0.03       0.24 f
+  U9/ZN (AND2_X1)                          0.04       0.28 f
+  U8/ZN (OAI22_X1)                         0.04       0.33 r
+  U6/ZN (XNOR2_X1)                         0.06       0.39 r
+  U5/ZN (OAI22_X1)                         0.04       0.42 f
+  PISO_reg[3]/D (DFFR_X1)                  0.01       0.43 f
+  data arrival time                                   0.43
+
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  PISO_reg[3]/CK (DFFR_X1)                 0.00      10.00 r
+  library setup time                      -0.04       9.96
+  data required time                                  9.96
+  -----------------------------------------------------------
+  data required time                                  9.96
+  data arrival time                                  -0.43
+  -----------------------------------------------------------
+  slack (MET)                                         9.53
+
+
+1

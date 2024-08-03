@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : SIPISOALU
+Version: F-2011.09-SP3
+Date   : Sat Apr 23 14:18:31 2022
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+SIPISOALU              5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   8.4386 uW   (89%)
+  Net Switching Power  =   1.0618 uW   (11%)
+                         ---------
+Total Dynamic Power    =   9.5004 uW  (100%)
+
+Cell Leakage Power     =   2.0168 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.3564            0.5189          661.1983            1.5364  (  13.34%)
+register           7.8492            0.2297          915.3636            8.9942  (  78.09%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.2330            0.3133          440.2452            0.9866  (   8.57%)
+--------------------------------------------------------------------------------------------------
+Total              8.4386 uW         1.0618 uW     2.0168e+03 nW        11.5172 uW
+1

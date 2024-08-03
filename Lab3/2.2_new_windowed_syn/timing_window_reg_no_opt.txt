@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aarf_M_14_N_14_F_14_size_word_164_n_window_addr_14_physical_addr_16_size_windows_12_physical_addr_num_In_Local_Out_136_physical_addr_num_140
+Version: F-2011.09-SP3
+Date   : Tue Apr 26 23:44:41 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: m_CU/REG_MEM_ADDR_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: m_mem/DATA_OUT_reg[4]
+            (positive level-sensitive latch clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  aarf_M_14_N_14_F_14_size_word_164_n_window_addr_14_physical_addr_16_size_windows_12_physical_addr_num_In_Local_Out_136_physical_addr_num_140
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  m_CU/REG_MEM_ADDR_reg[5]/CK (DFF_X1)                    0.00       0.00 r
+  m_CU/REG_MEM_ADDR_reg[5]/Q (DFF_X1)                     0.20       0.20 r
+  m_CU/REG_MEM_ADDR[5] (management_M_34_N_34_F_34_physical_addr_36)
+                                                          0.00       0.20 r
+  m_mem/ADDR[5] (memory_M_44_N_44_F_44_size_addr_46_size_data_464)
+                                                          0.00       0.20 r
+  m_mem/U2883/ZN (NOR3_X2)                                0.09       0.28 f
+  m_mem/U482/ZN (NAND2_X1)                                0.06       0.35 r
+  m_mem/U434/ZN (INV_X1)                                  0.04       0.38 f
+  m_mem/U111/Z (BUF_X1)                                   0.07       0.45 f
+  m_mem/U1200/ZN (AOI22_X1)                               0.08       0.53 r
+  m_mem/U1836/ZN (NAND4_X1)                               0.05       0.57 f
+  m_mem/U533/ZN (NOR4_X1)                                 0.10       0.67 r
+  m_mem/U531/ZN (NAND2_X1)                                0.03       0.70 f
+  m_mem/DATA_OUT_reg[4]/D (DLH_X1)                        0.01       0.71 f
+  data arrival time                                                  0.71
+
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  m_mem/DATA_OUT_reg[4]/G (DLH_X1)                        0.00       0.00 r
+  time borrowed from endpoint                             0.71       0.71
+  data required time                                                 0.71
+  --------------------------------------------------------------------------
+  data required time                                                 0.71
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  CLK pulse width                                        12.50   
+  library setup time                                     -0.06   
+  --------------------------------------------------------------
+  max time borrow                                        12.44   
+  actual time borrow                                      0.71   
+  --------------------------------------------------------------
+
+
+1

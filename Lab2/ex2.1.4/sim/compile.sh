@@ -1,0 +1,14 @@
+vcom constants.vhd
+vcom high_math.vhd
+vcom mux.vhd
+vcom fa.vhd
+vcom rca.vhd
+vcom csb.vhd
+vcom f_add.vhd
+vcom g.vhd
+vcom pg.vhd
+vcom stl_base.vhd
+vcom sum_gen.vhd
+vcom sum_p4.vhd
+vcom lfsr.vhd
+vcom tb_p4_adder.vhd

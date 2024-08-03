@@ -1,0 +1,76 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : P4_ADDER
+Version: F-2011.09-SP3
+Date   : Fri Apr  1 20:23:42 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[11] (input port)
+  Endpoint: S[20] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4_ADDER           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[11] (in)                                              0.00       0.00 f
+  UCARRY/A[11] (CARRY_GENERATOR_NBIT32_NBIT_PER_BLOCK4)
+                                                          0.00       0.00 f
+  UCARRY/R0_0_11/f_a (f_add_21)                           0.00       0.00 f
+  UCARRY/R0_0_11/U2/Z (XOR2_X1)                           0.08       0.08 f
+  UCARRY/R0_0_11/P (f_add_21)                             0.00       0.08 f
+  UCARRY/PG_B1_1_12/P1 (pg_23)                            0.00       0.08 f
+  UCARRY/PG_B1_1_12/U3/ZN (INV_X1)                        0.03       0.11 r
+  UCARRY/PG_B1_1_12/U2/ZN (OAI21_X1)                      0.03       0.13 f
+  UCARRY/PG_B1_1_12/G_out (pg_23)                         0.00       0.13 f
+  UCARRY/PG_B1_2_12/Ga (pg_11)                            0.00       0.13 f
+  UCARRY/PG_B1_2_12/U3/ZN (AOI21_X1)                      0.05       0.18 r
+  UCARRY/PG_B1_2_12/U2/ZN (INV_X1)                        0.03       0.21 f
+  UCARRY/PG_B1_2_12/G_out (pg_11)                         0.00       0.21 f
+  UCARRY/PG_B1_3_16/Gb (pg_5)                             0.00       0.21 f
+  UCARRY/PG_B1_3_16/U1/ZN (AOI21_X1)                      0.04       0.25 r
+  UCARRY/PG_B1_3_16/U2/ZN (INV_X1)                        0.02       0.27 f
+  UCARRY/PG_B1_3_16/G_out (pg_5)                          0.00       0.27 f
+  UCARRY/G_B_4_16/Ga (g_5)                                0.00       0.27 f
+  UCARRY/G_B_4_16/U3/ZN (INV_X1)                          0.02       0.30 r
+  UCARRY/G_B_4_16/U1/ZN (NAND2_X1)                        0.04       0.34 f
+  UCARRY/G_B_4_16/G_out (g_5)                             0.00       0.34 f
+  UCARRY/G_B_5_20/Gb (g_4)                                0.00       0.34 f
+  UCARRY/G_B_5_20/U2/ZN (NAND2_X1)                        0.04       0.37 r
+  UCARRY/G_B_5_20/U3/ZN (NAND2_X1)                        0.04       0.41 f
+  UCARRY/G_B_5_20/G_out (g_4)                             0.00       0.41 f
+  UCARRY/Co[5] (CARRY_GENERATOR_NBIT32_NBIT_PER_BLOCK4)
+                                                          0.00       0.41 f
+  USUM/Ci[5] (SUM_GENERATOR_NBIT_PER_BLOCK4_NBLOCKS8)     0.00       0.41 f
+  USUM/cbl_6/Ci_c (csb_ANBIT4_3)                          0.00       0.41 f
+  USUM/cbl_6/Mu/SEL (mux_3)                               0.00       0.41 f
+  USUM/cbl_6/Mu/U1/Z (MUX2_X1)                            0.07       0.48 r
+  USUM/cbl_6/Mu/Y[0] (mux_3)                              0.00       0.48 r
+  USUM/cbl_6/So_c[0] (csb_ANBIT4_3)                       0.00       0.48 r
+  USUM/S[20] (SUM_GENERATOR_NBIT_PER_BLOCK4_NBLOCKS8)     0.00       0.48 r
+  S[20] (out)                                             0.00       0.48 r
+  data arrival time                                                  0.48
+
+  max_delay                                               0.48       0.48
+  output external delay                                   0.00       0.48
+  data required time                                                 0.48
+  --------------------------------------------------------------------------
+  data required time                                                 0.48
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase signficant digits)                       0.00
+
+
+1

@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : ACC
+Version: F-2011.09-SP3
+Date   : Mon Mar 14 11:23:50 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                           99
+Number of nets:                           197
+Number of cells:                           98
+Number of combinational cells:             33
+Number of sequential cells:                64
+Number of macros:                           0
+Number of buf/inv:                          1
+Number of references:                       4
+
+Combinational area:        195.510001
+Noncombinational area:     340.480011
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           535.990012
+Total area:                 undefined

@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : REG_NBIT16_1
+Version: F-2011.09-SP3
+Date   : Wed Mar  9 19:02:25 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: UFD2_15/Q_reg
+              (rising edge-triggered flip-flop)
+  Endpoint: OUTPUT[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  REG_NBIT16_1       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  UFD2_15/Q_reg/clocked_on (**SEQGEN**)                   0.00       0.00 r
+  UFD2_15/Q_reg/Q (**SEQGEN**)                            0.00       0.00 r
+  UFD2_15/Q (FD_1)                                        0.00       0.00 r
+  OUTPUT[15] (out)                                        0.00       0.00 r
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+

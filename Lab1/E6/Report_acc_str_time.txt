@@ -1,0 +1,34 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : ACC
+Version: F-2011.09-SP3
+Date   : Mon Mar 14 11:24:08 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Y_reg[31] (rising edge-triggered flip-flop)
+  Endpoint: Y[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ACC                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  Y_reg[31]/CK (DFFR_X1)                   0.00       0.00 r
+  Y_reg[31]/Q (DFFR_X1)                    0.10       0.10 r
+  Y[31] (out)                              0.00       0.10 r
+  data arrival time                                   0.10
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+

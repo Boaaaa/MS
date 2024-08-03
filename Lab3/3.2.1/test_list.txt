@@ -1,0 +1,19 @@
+1. two read port and one write port             correct
+	
+2. spill  correct
+	1. stop data transfer between CPU and RF    correct
+	2. transfer data to memory                  correct
+	3. change swp								correct
+	4. recover the function of data transfer between CPU and RF   correct
+3. memory store  correct
+
+4. return 
+	1. cwp change	  		  correct			
+	2. read and write port    correct
+	
+	
+5. fill
+	1. stop data transfer between CPU and RF  correct
+	2. transfer data from memory        correct              
+	3. change swp		correct
+	4. recover the function of data transfer between CPU and RF   correct 

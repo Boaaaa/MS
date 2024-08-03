@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : MUX21_GENERIC_NBIT16_1
+Version: F-2011.09-SP3
+Date   : Wed Mar  9 18:13:35 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+    gtech (File: /software/synopsys/syn_current_64.11/libraries/syn/gtech.db)
+
+Number of ports:                           49
+Number of nets:                            82
+Number of cells:                            4
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       3
+
+Combinational area:         13.300000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:            13.300000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)

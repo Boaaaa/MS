@@ -1,0 +1,5 @@
+vcom /home/ms22.8/cap1/constants.vhd
+vcom /home/ms22.8/cap1/iv.vhd
+vcom /home/ms22.8/cap1/nd2.vhd
+vcom /home/ms22.8/cap1/nd2_bit.vhd
+vcom /home/ms22.8/cap1/mux21.vhd

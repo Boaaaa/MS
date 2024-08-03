@@ -1,0 +1,31 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : area
+Design : MUX21_GENERIC_NBIT16
+Version: F-2011.09-SP3
+Date   : Wed Mar  9 18:03:16 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gtech (File: /software/synopsys/syn_current_64.11/libraries/syn/gtech.db)
+
+Number of ports:                           49
+Number of nets:                            52
+Number of cells:                            4
+Number of combinational cells:              4
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          3
+Number of references:                       3
+
+Combinational area:          0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:             0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
